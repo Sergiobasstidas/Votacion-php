@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario de Votación</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Formulario de Votación</h1>
+    <form id="votacionForm">
+      <label for="nombreApellido">Nombre y Apellido:</label>
+      <input type="text" id="nombreApellido" name="nombreApellido" required />
+
+      <label for="alias">Alias:</label>
+      <input type="text" id="alias" name="alias" required />
+
+      <label for="rut">RUT:</label>
+      <input type="text" id="rut" name="rut" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="region">Región:</label>
+      <select id="region" name="region" required></select>
+
+      <label for="comuna">Comuna:</label>
+      <select id="comuna" name="comuna" required></select>
+
+      <label for="candidato">Candidato:</label>
+      <select id="candidato" name="candidato" required></select>
+
+      <label>¿Cómo se enteró de Nosotros?</label>
+      <input type="checkbox" name="enterado" value="web" /> Web
+      <input type="checkbox" name="enterado" value="tv" /> TV
+      <input type="checkbox" name="enterado" value="amigo" /> Amigo
+      <input type="checkbox" name="enterado" value="otro" /> Otro
+
+      <button type="submit">Votar</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

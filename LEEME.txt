@@ -1,0 +1,24 @@
+Sistema de Votación
+Este proyecto es un Sistema de Votación web desarrollado en HTML, PHP y JavaScript. Permite a los usuarios registrar sus votos y almacenarlos en una base de datos PostgreSQL. El proyecto incluye validaciones en el formulario de votación y carga dinámica de regiones, comunas y candidatos desde la base de datos.
+
+Requisitos
+PHP 7.4 o superior
+PostgreSQL
+Servidor web (Apache, Nginx, etc.)
+
+
+Configuración del Proyecto
+Antes de ejecutar el proyecto, asegúrate de configurar las siguientes variables de entorno en tu entorno de desarrollo:
+
+DB_HOST: La dirección IP o el nombre de host del servidor de la base de datos PostgreSQL.
+DB_PORT: El puerto en el que PostgreSQL está escuchando (normalmente 5432).
+DB_NAME: El nombre de la base de datos que utilizará el proyecto.
+DB_USER: El nombre de usuario de PostgreSQL con permisos para acceder a la base de datos.
+DB_PASSWORD: La contraseña del usuario de PostgreSQL.
+
+Ejemplo de Configuración en Entorno de Desarrollo Local (bash):
+export DB_HOST=localhost
+export DB_PORT=5432
+export DB_NAME=votacion
+export DB_USER=usuario_votacion
+export DB_PASSWORD=password123
